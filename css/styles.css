@@ -151,6 +151,14 @@ margin-right: 50px;
  {
     color: var(--selection-color);
 }
+
+/* .mail:hover,
+.mail:focus,
+.tel:hover,
+.tel:focus {
+    fill: var(--selection-color);
+} */
+
  .contact-icon:hover, .contact-icon:focus {
 fill: var(--selection-color);
  }
@@ -365,6 +373,7 @@ height: 44px;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: var(--clients-grey);
   
 }
 .team-soc-list {
@@ -374,15 +383,17 @@ height: 44px;
     margin-top: 16px;
 }
 
-
-
 .team-soc-link:hover {
+    color: var(--color-wight);
     background-color: var(--selection-color);
 }
 
-.team-soc-link:hover .team-soc-icon {
-    fill: var(--color-wight);
+.team-soc-icon {
+    fill: currentColor;
 }
+/* .team-soc-link:hover .team-soc-icon {
+    fill: var(--color-wight);
+} */
 
 /* ----------Clients---------- */
 .clients-item {
@@ -477,6 +488,22 @@ color: var(--footer-rgba);
 .address-mail:hover, .address-mail:focus,
 .address-tel:hover, .address-tel:focus {
 color: var(--selection-color);
+}
+
+.contact-us-text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--color-wight);
+}
+
+.contact-us-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 /*--------Portfolio-----*/
