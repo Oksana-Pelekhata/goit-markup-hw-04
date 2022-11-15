@@ -53,26 +53,19 @@ a {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    /* padding-top: 94px;
-    padding-bottom: 94px; */
     margin: 0 auto;  
-    /* background-color: tomato;
-    outline: purple; */
 }
 
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
 }
-.color {
+/* .color {
     background-color: tomato;
-}
-/*--------HEADER---------------*/
-/* .header {
-    display: flex;
 } */
+/*--------HEADER---------------*/
+
 .header {
- 
     border-bottom: 1px solid var(--border-line);
 }
 .logo {
@@ -83,8 +76,6 @@ a {
     align-items: center;
 padding-top: 0;
 padding-bottom: 0;
-  
-    
 }
 
 .logo-blue, .logo-black {
@@ -144,6 +135,7 @@ display: flex;
 align-items: center;
 color: var(--color-grey);
 }
+
 .header-nav-link:hover,
 .header-nav-link:focus,
 .mail:hover,
@@ -151,16 +143,16 @@ color: var(--color-grey);
 .tel:hover,
 .tel:focus,
 .header-nav-link-current
- {
+{
     color: var(--selection-color);
-    fill: var(--selection-color);
 }
 
 .contact-icon {
     margin-right: 10px;
-    fill: var(--color-grey);
+    fill: currentColor;
+    /* fill: var(--color-grey); */
 }
-/*-------hero-----------*/
+-------hero-----------*/
 .hero {
     background-color: var(--background-color);
     text-align: center;
