@@ -139,7 +139,10 @@ margin-right: 50px;
     color: var(--color-black);
 }
 
-.mail, .tel {color: var(--color-grey);
+.mail, .tel {
+display: flex;
+align-items: center;
+color: var(--color-grey);
 }
 .header-nav-link:hover,
 .header-nav-link:focus,
@@ -155,6 +158,7 @@ margin-right: 50px;
 
 .contact-icon {
     margin-right: 10px;
+    fill: var(--color-grey);
 }
 /*-------hero-----------*/
 .hero {
@@ -163,16 +167,12 @@ margin-right: 50px;
     padding-bottom: 200px;
     padding-top: 200px;
 max-width: 1600px;
-height: 600px;
 margin-left: auto;
 margin-right: auto;
 background-image: var(--gradient), url(../images/hero.jpg);
-
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
-
 }
 
 .hero-title {
@@ -263,7 +263,6 @@ color: var(--color-wight);
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 270px;
     height: 120px;
     background-color: var(--background-grey);
 border-radius: 4px;
@@ -324,7 +323,7 @@ margin-right: 30px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     background-color: var(--color-wight);
-    width: calc((100%-90px)/4);
+    width: calc((100% - 90px)/4);
 }
 .team-header { 
     margin-bottom: 10px;    
@@ -356,7 +355,6 @@ height: 44px;
 .team-soc-link {
     width: 100%;
     height: 100%;
-    /* background-color: tomato; */
     border-radius: 50%;
     display: block;
     display: flex;
@@ -372,7 +370,7 @@ height: 44px;
     margin-top: 16px;
 }
 
-.team-soc-link:hover, team-soc-link:focus {
+.team-soc-link:hover, .team-soc-link:focus {
     color: var(--color-wight);
     background-color: var(--selection-color);
 }
@@ -383,9 +381,8 @@ height: 44px;
 
 /* ----------Clients---------- */
 .clients-item {
-
-    width: 170px;
-    height: 92px;
+width: calc((100% - 150px)/6);
+height: 92px;
 }
 
 .clients-list {
@@ -569,7 +566,7 @@ margin-bottom: 4px;
 .portfolio-btn {
     display: flex;
    justify-content: center;
-    margin-bottom: 34px;
+    margin-bottom: 50px;
     gap: 8px;
 }
 
